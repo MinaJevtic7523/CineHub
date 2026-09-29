@@ -1,0 +1,781 @@
+{
+  "lastUpdated": "2025-05-06",
+  "totalCount": 20,
+  "series": [
+    {
+      "id": 1,
+      "title": "Breaking Bad",
+      "year": 2008,
+      "endYear": 2013,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 9.5,
+        "votes": 2100000
+      },
+      "seasons": 5,
+      "episodes": 62,
+      "episodeDuration": 47,
+      "creator": "Vince Gilligan",
+      "cast": [
+        {
+          "name": "Bryan Cranston",
+          "role": "Walter White"
+        },
+        {
+          "name": "Aaron Paul",
+          "role": "Jesse Pinkman"
+        }
+      ],
+      "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine to secure his family's future.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-01-05",
+      "tags": [
+        "crime",
+        "transformation",
+        "meth"
+      ],
+      "imgPath": "series/breakingbad.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Game of Thrones",
+      "year": 2011,
+      "endYear": 2019,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 9.2,
+        "votes": 2200000
+      },
+      "seasons": 8,
+      "episodes": 73,
+      "episodeDuration": 57,
+      "creator": "David Benioff, D.B. Weiss",
+      "cast": [
+        {
+          "name": "Emilia Clarke",
+          "role": "Daenerys Targaryen"
+        },
+        {
+          "name": "Kit Harington",
+          "role": "Jon Snow"
+        }
+      ],
+      "description": "Nine noble families fight for control over Westeros, while an ancient enemy returns after being dormant for millennia.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-01-08",
+      "tags": [
+        "fantasy",
+        "dragons",
+        "war"
+      ],
+      "imgPath": "series/got.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Chernobyl",
+      "year": 2019,
+      "endYear": 2019,
+      "genre": [
+        "Drama",
+        "History",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 9.4,
+        "votes": 800000
+      },
+      "seasons": 1,
+      "episodes": 5,
+      "episodeDuration": 70,
+      "creator": "Craig Mazin",
+      "cast": [
+        {
+          "name": "Jared Harris",
+          "role": "Valery Legasov"
+        },
+        {
+          "name": "Stellan Skarsgård",
+          "role": "Boris Shcherbina"
+        }
+      ],
+      "description": "In April 1986, an explosion at the Chernobyl nuclear power plant becomes one of the world's worst man-made catastrophes.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-01-12",
+      "tags": [
+        "miniseries",
+        "history",
+        "disaster"
+      ],
+      "imgPath": "series/Chernobyl.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Dark",
+      "year": 2017,
+      "endYear": 2020,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": {
+        "imdb": 8.8,
+        "votes": 380000
+      },
+      "seasons": 3,
+      "episodes": 26,
+      "episodeDuration": 60,
+      "creator": "Baran bo Odar, Jantje Friese",
+      "cast": [
+        {
+          "name": "Louis Hofmann",
+          "role": "Jonas Kahnwald"
+        },
+        {
+          "name": "Lisa Vicari",
+          "role": "Martha Nielsen"
+        }
+      ],
+      "description": "A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families.",
+      "language": "German",
+      "status": "Ended",
+      "addedDate": "2024-02-01",
+      "tags": [
+        "time-travel",
+        "mystery",
+        "german"
+      ],
+      "imgPath": "series/Dark.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Peaky Blinders",
+      "year": 2013,
+      "endYear": 2022,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 8.8,
+        "votes": 700000
+      },
+      "seasons": 6,
+      "episodes": 36,
+      "episodeDuration": 60,
+      "creator": "Steven Knight",
+      "cast": [
+        {
+          "name": "Cillian Murphy",
+          "role": "Tommy Shelby"
+        },
+        {
+          "name": "Paul Anderson",
+          "role": "Arthur Shelby"
+        }
+      ],
+      "description": "A gangster family epic set in 1900s England, centering on a gang from Birmingham who sew razor blades in the peaks of their caps.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-02-15",
+      "tags": [
+        "gangster",
+        "1920s",
+        "british"
+      ],
+      "imgPath": "series/Peaky Blinders.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Stranger Things",
+      "year": 2016,
+      "endYear": null,
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 1200000
+      },
+      "seasons": 4,
+      "episodes": 34,
+      "episodeDuration": 51,
+      "creator": "Matt Duffer, Ross Duffer",
+      "cast": [
+        {
+          "name": "Millie Bobby Brown",
+          "role": "Eleven"
+        },
+        {
+          "name": "Finn Wolfhard",
+          "role": "Mike Wheeler"
+        }
+      ],
+      "description": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces to get him back.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-03-01",
+      "tags": [
+        "80s",
+        "supernatural",
+        "kids"
+      ],
+      "imgPath": "series/Stranger Things.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Black Mirror",
+      "year": 2011,
+      "endYear": null,
+      "genre": [
+        "Drama",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 430000
+      },
+      "seasons": 6,
+      "episodes": 27,
+      "episodeDuration": 60,
+      "creator": "Charlie Brooker",
+      "cast": [
+        {
+          "name": "Various",
+          "role": "Anthology series"
+        }
+      ],
+      "description": "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-03-15",
+      "tags": [
+        "tech",
+        "dystopia",
+        "anthology"
+      ],
+      "imgPath": "series/Black Mirror.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Better Call Saul",
+      "year": 2015,
+      "endYear": 2022,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.9,
+        "votes": 560000
+      },
+      "seasons": 6,
+      "episodes": 63,
+      "episodeDuration": 47,
+      "creator": "Vince Gilligan, Peter Gould",
+      "cast": [
+        {
+          "name": "Bob Odenkirk",
+          "role": "Jimmy McGill / Saul Goodman"
+        },
+        {
+          "name": "Jonathan Banks",
+          "role": "Mike Ehrmantraut"
+        }
+      ],
+      "description": "The prequel to Breaking Bad follows the transformation of James McGill, a small-time lawyer who gradually turns into morally compromised Saul Goodman.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-04-01",
+      "tags": [
+        "prequel",
+        "lawyer",
+        "crime"
+      ],
+      "imgPath": "series/Better Call Saul.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Last of Us",
+      "year": 2023,
+      "endYear": null,
+      "genre": [
+        "Action",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 580000
+      },
+      "seasons": 2,
+      "episodes": 19,
+      "episodeDuration": 54,
+      "creator": "Craig Mazin, Neil Druckmann",
+      "cast": [
+        {
+          "name": "Pedro Pascal",
+          "role": "Joel Miller"
+        },
+        {
+          "name": "Bella Ramsey",
+          "role": "Ellie Williams"
+        }
+      ],
+      "description": "After a global catastrophe, a hardened survivor and a teenage girl must traverse a dangerous post-apocalyptic world.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-04-15",
+      "tags": [
+        "apocalypse",
+        "survival",
+        "game-adaptation"
+      ],
+      "imgPath": "series/The Last of Us.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Squid Game",
+      "year": 2021,
+      "endYear": null,
+      "genre": [
+        "Action",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": {
+        "imdb": 8,
+        "votes": 650000
+      },
+      "seasons": 2,
+      "episodes": 16,
+      "episodeDuration": 53,
+      "creator": "Hwang Dong-hyuk",
+      "cast": [
+        {
+          "name": "Lee Jung-jae",
+          "role": "Seong Gi-hun"
+        },
+        {
+          "name": "Park Hae-soo",
+          "role": "Cho Sang-woo"
+        }
+      ],
+      "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games with deadly high stakes.",
+      "language": "Korean",
+      "status": "Ongoing",
+      "addedDate": "2024-05-01",
+      "tags": [
+        "survival",
+        "korean",
+        "games"
+      ],
+      "imgPath": "series/Squid Game.jpg"
+    },
+    {
+      "id": 11,
+      "title": "House of the Dragon",
+      "year": 2022,
+      "endYear": null,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 8.4,
+        "votes": 520000
+      },
+      "seasons": 2,
+      "episodes": 18,
+      "episodeDuration": 63,
+      "creator": "Ryan Condal, George R.R. Martin",
+      "cast": [
+        {
+          "name": "Paddy Considine",
+          "role": "King Viserys I"
+        },
+        {
+          "name": "Matt Smith",
+          "role": "Prince Daemon Targaryen"
+        }
+      ],
+      "description": "The story takes place 200 years before Game of Thrones and tells the story of House Targaryen.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-05-15",
+      "tags": [
+        "fantasy",
+        "dragons",
+        "got-spinoff"
+      ],
+      "imgPath": "series/House of the Dragon.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Severance",
+      "year": 2022,
+      "endYear": null,
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 340000
+      },
+      "seasons": 2,
+      "episodes": 19,
+      "episodeDuration": 52,
+      "creator": "Dan Erickson",
+      "cast": [
+        {
+          "name": "Adam Scott",
+          "role": "Mark Scout"
+        },
+        {
+          "name": "Patricia Arquette",
+          "role": "Harmony Cobel"
+        }
+      ],
+      "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-06-01",
+      "tags": [
+        "corporate",
+        "identity",
+        "mystery"
+      ],
+      "imgPath": "series/Severance.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Ozark",
+      "year": 2017,
+      "endYear": 2022,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.4,
+        "votes": 450000
+      },
+      "seasons": 4,
+      "episodes": 44,
+      "episodeDuration": 60,
+      "creator": "Bill Dubuque, Mark Williams",
+      "cast": [
+        {
+          "name": "Jason Bateman",
+          "role": "Marty Byrde"
+        },
+        {
+          "name": "Laura Linney",
+          "role": "Wendy Byrde"
+        }
+      ],
+      "description": "A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder money to appease a drug boss.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-06-15",
+      "tags": [
+        "crime",
+        "money",
+        "family"
+      ],
+      "imgPath": "series/Ozark.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Wednesday",
+      "year": 2022,
+      "endYear": null,
+      "genre": [
+        "Comedy",
+        "Fantasy",
+        "Mystery"
+      ],
+      "rating": {
+        "imdb": 8.1,
+        "votes": 390000
+      },
+      "seasons": 2,
+      "episodes": 16,
+      "episodeDuration": 47,
+      "creator": "Alfred Gough, Miles Millar",
+      "cast": [
+        {
+          "name": "Jenna Ortega",
+          "role": "Wednesday Addams"
+        },
+        {
+          "name": "Gwendoline Christie",
+          "role": "Principal Weems"
+        }
+      ],
+      "description": "Wednesday Addams navigates her new life at Nevermore Academy, trying to master her psychic powers and unravel a supernatural mystery.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-07-01",
+      "tags": [
+        "dark-comedy",
+        "teen",
+        "mystery"
+      ],
+      "imgPath": "series/Wednesday.jpg"
+    },
+    {
+      "id": 15,
+      "title": "The Crown",
+      "year": 2016,
+      "endYear": 2023,
+      "genre": [
+        "Drama",
+        "History"
+      ],
+      "rating": {
+        "imdb": 8.6,
+        "votes": 280000
+      },
+      "seasons": 6,
+      "episodes": 60,
+      "episodeDuration": 58,
+      "creator": "Peter Morgan",
+      "cast": [
+        {
+          "name": "Imelda Staunton",
+          "role": "Queen Elizabeth II"
+        },
+        {
+          "name": "Jonathan Pryce",
+          "role": "Prince Philip"
+        }
+      ],
+      "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-07-15",
+      "tags": [
+        "royalty",
+        "history",
+        "netflix"
+      ],
+      "imgPath": "series/The Crown.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Sherlock",
+      "year": 2010,
+      "endYear": 2017,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": {
+        "imdb": 9.1,
+        "votes": 890000
+      },
+      "seasons": 4,
+      "episodes": 15,
+      "episodeDuration": 88,
+      "creator": "Mark Gatiss, Steven Moffat",
+      "cast": [
+        {
+          "name": "Benedict Cumberbatch",
+          "role": "Sherlock Holmes"
+        },
+        {
+          "name": "Martin Freeman",
+          "role": "Dr. John Watson"
+        }
+      ],
+      "description": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-08-01",
+      "tags": [
+        "detective",
+        "british",
+        "modern"
+      ],
+      "imgPath": "series/Sherlock.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Money Heist",
+      "year": 2017,
+      "endYear": 2021,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 8.2,
+        "votes": 430000
+      },
+      "seasons": 5,
+      "episodes": 41,
+      "episodeDuration": 55,
+      "creator": "Álex Pina",
+      "cast": [
+        {
+          "name": "Álvaro Morte",
+          "role": "El Profesor"
+        },
+        {
+          "name": "Úrsula Corberó",
+          "role": "Tokyo"
+        }
+      ],
+      "description": "A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history — to print billions of euros in the Royal Mint of Spain.",
+      "language": "Spanish",
+      "status": "Ended",
+      "addedDate": "2024-08-15",
+      "tags": [
+        "heist",
+        "spanish",
+        "netflix"
+      ],
+      "imgPath": "series/Money Heist.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Mindhunter",
+      "year": 2017,
+      "endYear": 2019,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.6,
+        "votes": 380000
+      },
+      "seasons": 2,
+      "episodes": 19,
+      "episodeDuration": 54,
+      "creator": "Joe Penhall",
+      "cast": [
+        {
+          "name": "Jonathan Groff",
+          "role": "Holden Ford"
+        },
+        {
+          "name": "Holt McCallany",
+          "role": "Bill Tench"
+        }
+      ],
+      "description": "In the late 1970s two FBI agents expand criminal science by delving into the psychology of murder and coining the term serial killer.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2024-09-01",
+      "tags": [
+        "fbi",
+        "serial-killer",
+        "fincher"
+      ],
+      "imgPath": "series/Mindhunter.jpg"
+    },
+    {
+      "id": 19,
+      "title": "The Boys",
+      "year": 2019,
+      "endYear": null,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 620000
+      },
+      "seasons": 4,
+      "episodes": 32,
+      "episodeDuration": 60,
+      "creator": "Eric Kripke",
+      "cast": [
+        {
+          "name": "Karl Urban",
+          "role": "Billy Butcher"
+        },
+        {
+          "name": "Jack Quaid",
+          "role": "Hughie Campbell"
+        }
+      ],
+      "description": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers instead of using them for good.",
+      "language": "English",
+      "status": "Ongoing",
+      "addedDate": "2024-09-15",
+      "tags": [
+        "superhero",
+        "dark-comedy",
+        "satire"
+      ],
+      "imgPath": "series/The Boys.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Band of Brothers",
+      "year": 2001,
+      "endYear": 2001,
+      "genre": [
+        "War",
+        "Drama",
+        "History"
+      ],
+      "rating": {
+        "imdb": 9.4,
+        "votes": 490000
+      },
+      "seasons": 1,
+      "episodes": 10,
+      "episodeDuration": 60,
+      "creator": "Steven Spielberg",
+      "cast": [
+        {
+          "name": "Damian Lewis",
+          "role": "Richard Winters"
+        },
+        {
+          "name": "Ron Livingston",
+          "role": "Lewis Nixon"
+        }
+      ],
+      "description": "The story of Easy Company of the US Army 101st Airborne Division and their mission in WWII Europe, from Operation Overlord to V-J Day.",
+      "language": "English",
+      "status": "Ended",
+      "addedDate": "2025-01-20",
+      "tags": [
+        "ww2",
+        "war",
+        "hbo",
+        "military"
+      ],
+      "imgPath": "series/Band of Brothers.jpg"
+    }
+  ]
+}

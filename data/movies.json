@@ -1,0 +1,723 @@
+{
+  "lastUpdated": "2025-05-06",
+  "totalCount": 20,
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
+      "rating": {
+        "imdb": 9.3,
+        "votes": 2800000
+      },
+      "duration": 142,
+      "director": "Frank Darabont",
+      "cast": [
+        {
+          "name": "Tim Robbins",
+          "role": "Andy Dufresne"
+        },
+        {
+          "name": "Morgan Freeman",
+          "role": "Red"
+        }
+      ],
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-01-10",
+      "tags": [
+        "classic",
+        "prison",
+        "friendship"
+      ],
+      "imgPath": "movies/The Shawshank Redemption.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 9.2,
+        "votes": 1900000
+      },
+      "duration": 175,
+      "director": "Francis Ford Coppola",
+      "cast": [
+        {
+          "name": "Marlon Brando",
+          "role": "Vito Corleone"
+        },
+        {
+          "name": "Al Pacino",
+          "role": "Michael Corleone"
+        }
+      ],
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his empire to his reluctant son.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-01-12",
+      "tags": [
+        "classic",
+        "mafia",
+        "family"
+      ],
+      "imgPath": "movies/The Godfather.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.8,
+        "votes": 2400000
+      },
+      "duration": 148,
+      "director": "Christopher Nolan",
+      "cast": [
+        {
+          "name": "Leonardo DiCaprio",
+          "role": "Dom Cobb"
+        },
+        {
+          "name": "Joseph Gordon-Levitt",
+          "role": "Arthur"
+        }
+      ],
+      "description": "A thief who steals corporate secrets through dream-sharing technology is given the task of planting an idea into a CEO's mind.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-02-01",
+      "tags": [
+        "mind-bending",
+        "dreams",
+        "heist"
+      ],
+      "imgPath": "movies/Inception.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": [
+        "Sci-Fi",
+        "Drama",
+        "Adventure"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 1900000
+      },
+      "duration": 169,
+      "director": "Christopher Nolan",
+      "cast": [
+        {
+          "name": "Matthew McConaughey",
+          "role": "Cooper"
+        },
+        {
+          "name": "Anne Hathaway",
+          "role": "Brand"
+        }
+      ],
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-02-10",
+      "tags": [
+        "space",
+        "time",
+        "science"
+      ],
+      "imgPath": "movies/Interstellar.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.9,
+        "votes": 2100000
+      },
+      "duration": 154,
+      "director": "Quentin Tarantino",
+      "cast": [
+        {
+          "name": "John Travolta",
+          "role": "Vincent Vega"
+        },
+        {
+          "name": "Samuel L. Jackson",
+          "role": "Jules Winnfield"
+        }
+      ],
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-03-01",
+      "tags": [
+        "classic",
+        "nonlinear",
+        "cult"
+      ],
+      "imgPath": "movies/Pulp Fiction.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 9,
+        "votes": 2700000
+      },
+      "duration": 152,
+      "director": "Christopher Nolan",
+      "cast": [
+        {
+          "name": "Christian Bale",
+          "role": "Bruce Wayne"
+        },
+        {
+          "name": "Heath Ledger",
+          "role": "The Joker"
+        }
+      ],
+      "description": "When the Joker wreaks havoc on Gotham, Batman must accept one of the greatest psychological tests of his ability to fight injustice.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-03-15",
+      "tags": [
+        "superhero",
+        "action",
+        "batman"
+      ],
+      "imgPath": "movies/The Dark Knight.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Parasite",
+      "year": 2019,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.5,
+        "votes": 870000
+      },
+      "duration": 132,
+      "director": "Bong Joon-ho",
+      "cast": [
+        {
+          "name": "Song Kang-ho",
+          "role": "Ki-taek"
+        },
+        {
+          "name": "Lee Sun-kyun",
+          "role": "Park Dong-ik"
+        }
+      ],
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "language": "Korean",
+      "status": "Released",
+      "addedDate": "2024-04-01",
+      "tags": [
+        "oscar",
+        "class",
+        "thriller"
+      ],
+      "imgPath": "movies/Parasite.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": {
+        "imdb": 8.8,
+        "votes": 2100000
+      },
+      "duration": 142,
+      "director": "Robert Zemeckis",
+      "cast": [
+        {
+          "name": "Tom Hanks",
+          "role": "Forrest Gump"
+        },
+        {
+          "name": "Robin Wright",
+          "role": "Jenny Curran"
+        }
+      ],
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, and other historical events unfold through the perspective of an Alabama man with a low IQ.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-04-10",
+      "tags": [
+        "classic",
+        "drama",
+        "life"
+      ],
+      "imgPath": "movies/Forrest Gump.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Matrix",
+      "year": 1999,
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "rating": {
+        "imdb": 8.7,
+        "votes": 1900000
+      },
+      "duration": 136,
+      "director": "The Wachowskis",
+      "cast": [
+        {
+          "name": "Keanu Reeves",
+          "role": "Neo"
+        },
+        {
+          "name": "Laurence Fishburne",
+          "role": "Morpheus"
+        }
+      ],
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-04-20",
+      "tags": [
+        "cyberpunk",
+        "simulation",
+        "action"
+      ],
+      "imgPath": "movies/The Matrix.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Spirited Away",
+      "year": 2001,
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Family"
+      ],
+      "rating": {
+        "imdb": 8.6,
+        "votes": 750000
+      },
+      "duration": 125,
+      "director": "Hayao Miyazaki",
+      "cast": [
+        {
+          "name": "Daveigh Chase",
+          "role": "Chihiro (voice)"
+        },
+        {
+          "name": "Suzanne Pleshette",
+          "role": "Yubaba (voice)"
+        }
+      ],
+      "description": "During her family's move to the suburbs, a sulky 10-year-old girl wanders into a world ruled by gods, witches, and spirits.",
+      "language": "Japanese",
+      "status": "Released",
+      "addedDate": "2024-05-01",
+      "tags": [
+        "anime",
+        "magic",
+        "adventure"
+      ],
+      "imgPath": "movies/Spirited Away.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Gladiator",
+      "year": 2000,
+      "genre": [
+        "Action",
+        "Drama",
+        "Adventure"
+      ],
+      "rating": {
+        "imdb": 8.5,
+        "votes": 1500000
+      },
+      "duration": 155,
+      "director": "Ridley Scott",
+      "cast": [
+        {
+          "name": "Russell Crowe",
+          "role": "Maximus"
+        },
+        {
+          "name": "Joaquin Phoenix",
+          "role": "Commodus"
+        }
+      ],
+      "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-05-10",
+      "tags": [
+        "rome",
+        "action",
+        "revenge"
+      ],
+      "imgPath": "movies/Gladiator.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Joker",
+      "year": 2019,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": {
+        "imdb": 8.4,
+        "votes": 1200000
+      },
+      "duration": 122,
+      "director": "Todd Phillips",
+      "cast": [
+        {
+          "name": "Joaquin Phoenix",
+          "role": "Arthur Fleck"
+        },
+        {
+          "name": "Robert De Niro",
+          "role": "Murray Franklin"
+        }
+      ],
+      "description": "A mentally troubled stand-up comedian embarks on a downward spiral of revolution and bloody crime.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-06-01",
+      "tags": [
+        "villain",
+        "dark",
+        "origin"
+      ],
+      "imgPath": "movies/Joker.jpg"
+    },
+    {
+      "id": 13,
+      "title": "La La Land",
+      "year": 2016,
+      "genre": [
+        "Drama",
+        "Romance",
+        "Music"
+      ],
+      "rating": {
+        "imdb": 8,
+        "votes": 650000
+      },
+      "duration": 128,
+      "director": "Damien Chazelle",
+      "cast": [
+        {
+          "name": "Ryan Gosling",
+          "role": "Sebastian Wilder"
+        },
+        {
+          "name": "Emma Stone",
+          "role": "Mia Dolan"
+        }
+      ],
+      "description": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-06-15",
+      "tags": [
+        "musical",
+        "romance",
+        "dreams"
+      ],
+      "imgPath": "movies/La La Land.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "genre": [
+        "Action",
+        "Sci-Fi",
+        "Adventure"
+      ],
+      "rating": {
+        "imdb": 8.4,
+        "votes": 1100000
+      },
+      "duration": 181,
+      "director": "Anthony and Joe Russo",
+      "cast": [
+        {
+          "name": "Robert Downey Jr.",
+          "role": "Tony Stark"
+        },
+        {
+          "name": "Chris Evans",
+          "role": "Steve Rogers"
+        }
+      ],
+      "description": "After Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-07-01",
+      "tags": [
+        "marvel",
+        "superhero",
+        "epic"
+      ],
+      "imgPath": "movies/AvengersEndgame.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Oppenheimer",
+      "year": 2023,
+      "genre": [
+        "Drama",
+        "Thriller",
+        "History"
+      ],
+      "rating": {
+        "imdb": 8.3,
+        "votes": 900000
+      },
+      "duration": 180,
+      "director": "Christopher Nolan",
+      "cast": [
+        {
+          "name": "Cillian Murphy",
+          "role": "J. Robert Oppenheimer"
+        },
+        {
+          "name": "Emily Blunt",
+          "role": "Katherine Oppenheimer"
+        }
+      ],
+      "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-07-15",
+      "tags": [
+        "history",
+        "war",
+        "science"
+      ],
+      "imgPath": "movies/Oppenheimer.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Get Out",
+      "year": 2017,
+      "genre": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "rating": {
+        "imdb": 7.7,
+        "votes": 650000
+      },
+      "duration": 104,
+      "director": "Jordan Peele",
+      "cast": [
+        {
+          "name": "Daniel Kaluuya",
+          "role": "Chris Washington"
+        },
+        {
+          "name": "Allison Williams",
+          "role": "Rose Armitage"
+        }
+      ],
+      "description": "A young African-American visits his white girlfriend's parents for the weekend, where his uneasiness about their reception grows into something sinister.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-08-01",
+      "tags": [
+        "horror",
+        "social",
+        "thriller"
+      ],
+      "imgPath": "movies/Get Out.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Dune",
+      "year": 2021,
+      "genre": [
+        "Sci-Fi",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": {
+        "imdb": 8,
+        "votes": 750000
+      },
+      "duration": 155,
+      "director": "Denis Villeneuve",
+      "cast": [
+        {
+          "name": "Timothée Chalamet",
+          "role": "Paul Atreides"
+        },
+        {
+          "name": "Zendaya",
+          "role": "Chani"
+        }
+      ],
+      "description": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-08-20",
+      "tags": [
+        "space",
+        "epic",
+        "adaptation"
+      ],
+      "imgPath": "movies/Dune.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Everything Everywhere All at Once",
+      "year": 2022,
+      "genre": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "rating": {
+        "imdb": 7.8,
+        "votes": 620000
+      },
+      "duration": 139,
+      "director": "Daniel Kwan, Daniel Scheinert",
+      "cast": [
+        {
+          "name": "Michelle Yeoh",
+          "role": "Evelyn Wang"
+        },
+        {
+          "name": "Ke Huy Quan",
+          "role": "Waymond Wang"
+        }
+      ],
+      "description": "A middle-aged Chinese-American laundromat owner is swept into an insane adventure in which she alone can save existence by exploring other universes.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2024-09-01",
+      "tags": [
+        "multiverse",
+        "oscar",
+        "comedy"
+      ],
+      "imgPath": "movies/Everything Everywhere All at Once.jpg"
+    },
+    {
+      "id": 29,
+      "title": "Saving Private Ryan",
+      "year": 1998,
+      "genre": [
+        "War",
+        "Drama",
+        "Action"
+      ],
+      "rating": {
+        "imdb": 8.6,
+        "votes": 1400000
+      },
+      "duration": 169,
+      "director": "Steven Spielberg",
+      "cast": [
+        {
+          "name": "Tom Hanks",
+          "role": "Captain Miller"
+        },
+        {
+          "name": "Matt Damon",
+          "role": "Private Ryan"
+        }
+      ],
+      "description": "Following the Normandy Landings, a group of US soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2025-02-10",
+      "tags": [
+        "ww2",
+        "war",
+        "heroism"
+      ],
+      "imgPath": "movies/Saving Private Ryan.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Bohemian Rhapsody",
+      "year": 2018,
+      "genre": [
+        "Biography",
+        "Drama",
+        "Music"
+      ],
+      "rating": {
+        "imdb": 7.9,
+        "votes": 660000
+      },
+      "duration": 134,
+      "director": "Bryan Singer",
+      "cast": [
+        {
+          "name": "Rami Malek",
+          "role": "Freddie Mercury"
+        },
+        {
+          "name": "Lucy Boynton",
+          "role": "Mary Austin"
+        }
+      ],
+      "description": "A chronicle of the years leading up to Queen's legendary appearance at the Live Aid (1985) concert, focusing on lead singer Freddie Mercury.",
+      "language": "English",
+      "status": "Released",
+      "addedDate": "2025-02-15",
+      "tags": [
+        "queen",
+        "music",
+        "biography",
+        "freddie mercury"
+      ],
+      "imgPath": "movies/Bohemian Rhapsody.jpg"
+    }
+  ]
+}
