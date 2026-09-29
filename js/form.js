@@ -21,7 +21,7 @@ $(document).ready(function () {
       $('#nameError').hide();
     }
 
-    if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       $('#emailError').text('Please enter a valid email address.').show();
       ok = false;
     } else {
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
     this.reset();
     $('.field-error').hide();
-    showToast('Message sent successfully!', 'success');
+    showToast('Thanks! Demo form: your message was saved in this browser only.', 'success');
   });
 
   $('#resetFormBtn').on('click', function () {
