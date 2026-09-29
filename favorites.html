@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My List – CineHub</title>
+  <meta name="description" content="Your saved movies and series on CineHub." />
+  <meta name="keywords" content="favorites, my list, CineHub" />
+  <meta name="author" content="Mina Jevtić" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Cine<span>Hub</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="series.html">Series</a></li>
+        <li><a href="favorites.html">My List<span class="nav-fav-badge" id="navFavBadge"></span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <main class="favorites-page">
+    <div class="container">
+
+      <div class="fav-page-header">
+        <div>
+          <h1><span class="fav-heart">&#x2665;</span> My List</h1>
+          <p>Your saved movies and series</p>
+        </div>
+        <button class="btn btn-outline btn-sm" id="clearAllBtn">Clear all</button>
+      </div>
+
+      <div class="fav-section" id="favMoviesSection">
+        <div class="fav-section-title">
+          <h2>Movies</h2>
+          <span class="fav-section-count" id="favMoviesCount">0</span>
+        </div>
+        <div class="cards-grid" id="favMoviesGrid" role="list"></div>
+      </div>
+
+      <div class="fav-section" id="favSeriesSection">
+        <div class="fav-section-title">
+          <h2>Series</h2>
+          <span class="fav-section-count" id="favSeriesCount">0</span>
+        </div>
+        <div class="cards-grid" id="favSeriesGrid" role="list"></div>
+      </div>
+
+      <div class="fav-empty" id="favEmpty" style="display:none">
+        <div class="fav-empty-icon">&#9825;</div>
+        <h3>Your list is empty</h3>
+        <p>Add movies and series by clicking the &#9825; button on any card.</p>
+        <div class="fav-empty-btns">
+          <a href="movies.html" class="btn btn-primary">Browse Movies</a>
+          <a href="series.html" class="btn btn-outline">Browse Series</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="confirm-backdrop" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmMsg">
+    <div class="confirm-box">
+      <p id="confirmMsg">Remove all items from your list?</p>
+      <div class="confirm-btns">
+        <button class="btn btn-outline btn-sm" id="confirmCancel">Cancel</button>
+        <button class="btn btn-primary btn-sm" id="confirmOk">Remove all</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="itemModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Details</h3>
+        <button class="modal-close" id="modalClose" aria-label="Close">&#x2715;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">CineHub</div>
+          <p>Interactive catalog of movies and series.</p>
+          <div class="footer-social">
+            <a href="https://github.com/MinaJevtic7523" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:jevticm319@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CineHub &mdash; Mina Jevtić, 75/23</p>
+        <p class="footer-attr"><a href="https://www.flaticon.com/free-icons/cinema" title="cinema icons" target="_blank" rel="noopener">Cinema icons created by Freepik - Flaticon</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" role="region" aria-live="polite"></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+  <script>
+
+    let favMovies = [];
+    let favSeries = [];
+
+    $(document).ready(function () {
+
+      const favMovieIds = lsLoad(LS_KEYS.favMovies) || [];
+      const favSeriesIds = lsLoad(LS_KEYS.favSeries) || [];
+
+      if (favMovieIds.length === 0 && favSeriesIds.length === 0) {
+        $('#favMoviesSection, #favSeriesSection').hide();
+        $('#favEmpty').show();
+        return;
+      }
+
+      if (favMovieIds.length === 0) { $('#favMoviesSection').hide(); }
+      if (favSeriesIds.length === 0) { $('#favSeriesSection').hide(); }
+
+      if (favMovieIds.length > 0) {
+        $.ajax({
+          url: DATA_URLS.movies,
+          type: 'GET',
+          dataType: 'json',
+          success: function (d) {
+            for (let i = 0; i < d.movies.length; i++) {
+              for (let j = 0; j < favMovieIds.length; j++) {
+                if (d.movies[i].id == favMovieIds[j]) {
+                  favMovies.push(d.movies[i]);
+                  break;
+                }
+              }
+            }
+            renderGrid(favMovies, 'movie', '#favMoviesGrid', '#favMoviesCount');
+          }
+        });
+      }
+
+      if (favSeriesIds.length > 0) {
+        $.ajax({
+          url: DATA_URLS.series,
+          type: 'GET',
+          dataType: 'json',
+          success: function (d) {
+            for (let i = 0; i < d.series.length; i++) {
+              for (let j = 0; j < favSeriesIds.length; j++) {
+                if (d.series[i].id == favSeriesIds[j]) {
+                  favSeries.push(d.series[i]);
+                  break;
+                }
+              }
+            }
+            renderGrid(favSeries, 'series', '#favSeriesGrid', '#favSeriesCount');
+          }
+        });
+      }
+
+      $(document).on('click', '.btn-details', function () {
+        const id = $(this).data('id');
+        if ($(this).closest('#favMoviesGrid').length) {
+          contentType = 'movie';
+          allItems = favMovies;
+        } else {
+          contentType = 'series';
+          allItems = favSeries;
+        }
+        openModal(id);
+      });
+
+      $(document).on('click', '.btn-fav', function () {
+        const id = $(this).data('id');
+        const isMovie = $(this).closest('#favMoviesGrid').length > 0;
+        const type = isMovie ? 'movie' : 'series';
+        const key = isMovie ? LS_KEYS.favMovies : LS_KEYS.favSeries;
+
+        const list = lsLoad(key) || [];
+        const newList = [];
+        for (let i = 0; i < list.length; i++) {
+          if (list[i] != id) { newList.push(list[i]); }
+        }
+        lsSave(key, newList);
+
+        if (isMovie) {
+          const tmp = [];
+          for (let i = 0; i < favMovies.length; i++) {
+            if (favMovies[i].id != id) { tmp.push(favMovies[i]); }
+          }
+          favMovies = tmp;
+        } else {
+          const tmp = [];
+          for (let i = 0; i < favSeries.length; i++) {
+            if (favSeries[i].id != id) { tmp.push(favSeries[i]); }
+          }
+          favSeries = tmp;
+        }
+
+        $(this).closest('.card').fadeOut(300, function () {
+          $(this).remove();
+          checkEmpty();
+          updateBadge();
+        });
+
+        showToast('Removed from favorites.', 'info');
+      });
+
+      $('#clearAllBtn').on('click', function () {
+        $('#confirmModal').addClass('open');
+        $('body').css('overflow', 'hidden');
+      });
+
+      $('#confirmCancel').on('click', function () {
+        $('#confirmModal').removeClass('open');
+        $('body').css('overflow', '');
+      });
+
+      $('#confirmOk').on('click', function () {
+        $('#confirmModal').removeClass('open');
+        $('body').css('overflow', '');
+        lsSave(LS_KEYS.favMovies, []);
+        lsSave(LS_KEYS.favSeries, []);
+        favMovies = [];
+        favSeries = [];
+        $('#favMoviesSection, #favSeriesSection').fadeOut(200);
+        setTimeout(function () { $('#favEmpty').fadeIn(300); }, 220);
+        $('#navFavBadge').text('').removeClass('visible');
+        showToast('List cleared.', 'info');
+      });
+
+      $('#modalClose').on('click', function () {
+        $('#itemModal').removeClass('open');
+        $('body').css('overflow', '');
+      });
+
+      $('#itemModal').on('click', function (e) {
+        if (e.target === this) {
+          $('#itemModal').removeClass('open');
+          $('body').css('overflow', '');
+        }
+      });
+
+    });
+
+    function renderGrid(items, type, gridId, countId) {
+      contentType = type;
+      allItems = items;
+      $(countId).text(items.length);
+      let html = '';
+      for (let i = 0; i < items.length; i++) {
+        html += buildCard(items[i]);
+      }
+      $(gridId).html(html);
+    }
+
+    function checkEmpty() {
+      const moviesLeft = $('#favMoviesGrid .card').length;
+      const seriesLeft = $('#favSeriesGrid .card').length;
+      if (moviesLeft === 0) { $('#favMoviesSection').hide(); }
+      if (seriesLeft === 0) { $('#favSeriesSection').hide(); }
+      if (moviesLeft === 0 && seriesLeft === 0) {
+        $('#favEmpty').fadeIn(300);
+      }
+    }
+
+    function updateBadge() {
+      const total = (lsLoad(LS_KEYS.favMovies) || []).length +
+                    (lsLoad(LS_KEYS.favSeries) || []).length;
+      if (total > 0) {
+        $('#navFavBadge').text(total).addClass('visible');
+      } else {
+        $('#navFavBadge').text('').removeClass('visible');
+      }
+    }
+
+  </script>
+</body>
+</html>

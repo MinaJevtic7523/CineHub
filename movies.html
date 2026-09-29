@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies – CineHub</title>
+  <meta name="description"
+    content="Browse, sort and filter the full movie catalog on CineHub. Find movies by genre and IMDb rating." />
+  <meta name="keywords" content="movies, top movies, action, drama, sci-fi, IMDb, CineHub" />
+  <meta name="author" content="Mina Jevtić" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Cine<span>Hub</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="series.html">Series</a></li>
+        <li><a href="favorites.html">My List<span class="nav-fav-badge" id="navFavBadge"></span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <main class="catalog-page">
+    <div class="container">
+      <div class="catalog-header">
+        <h1>Movies</h1>
+        <p>Browse, sort and filter the full catalog</p>
+      </div>
+
+      <div class="search-bar">
+
+        <input type="text" id="searchInput" placeholder="Search movies...">
+
+      </div>
+      <div class="controls-row">
+        <label for="sortField">Sort by:</label>
+        <select class="select-control" id="sortField" aria-label="Sort field">
+          <option value="rating">Rating (IMDb)</option>
+          <option value="year">Year</option>
+          <option value="title">Title (A–Z)</option>
+          <option value="duration">Duration</option>
+        </select>
+
+        <select class="select-control" id="sortOrder" aria-label="Sort order">
+          <option value="desc">Descending ↓</option>
+          <option value="asc">Ascending ↑</option>
+        </select>
+
+        <button class="btn btn-outline btn-sm" id="filterToggleBtn">Show filters ▼</button>
+      </div>
+
+
+      <div class="filter-panel" id="filterPanel" aria-label="Filter panel">
+        <div class="filter-grid">
+
+          <div class="filter-group">
+            <label>Genre</label>
+            <div class="checkbox-list" id="genreFilterList">
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label>Min. rating (IMDb)</label>
+            <input type="range" id="ratingMinFilter" min="0" max="10" step="0.5" value="0"
+              aria-label="Minimum rating" />
+            <span class="range-display">0</span>
+          </div>
+
+        </div>
+
+        <div class="filter-actions">
+          <button class="btn btn-primary btn-sm" id="applyFiltersBtn">Apply filters</button>
+          <button class="btn btn-outline btn-sm" id="resetFiltersBtn">Reset</button>
+        </div>
+      </div>
+
+
+      <p class="results-info" id="resultsInfo"></p>
+      <div class="cards-grid" id="catalogGrid" role="list" aria-label="Movie list"></div>
+
+      <div class="load-more-wrapper">
+        <button class="btn btn-outline" id="loadMoreBtn" style="display:none">Load more</button>
+        <p class="load-more-info" id="loadMoreInfo"></p>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal-backdrop" id="itemModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Details</h3>
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">CineHub</div>
+          <p>Interactive catalog of movies and series.</p>
+          <div class="footer-social">
+            <a href="https://github.com/MinaJevtic7523" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:jevticm319@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CineHub — Mina Jevtić, 75/23</p>
+        <p class="footer-attr"><a href="https://www.flaticon.com/free-icons/cinema" title="cinema icons" target="_blank" rel="noopener">Cinema icons created by Freepik - Flaticon</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" role="region" aria-live="polite"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+  <script>
+    $(document).ready(function () {
+      initCatalogPage(DATA_URLS.movies, 'movie');
+    });
+  </script>
+</body>
+
+</html>
